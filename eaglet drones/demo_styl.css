@@ -1,0 +1,45 @@
+/* navbar basic settings  */
+
+nav {
+  background-color: rgb(68, 67, 67);
+  height: 30%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+  padding: 3px;
+  border-radius: 47%;
+}
+.middle-title a {
+  margin-left: 30px;
+
+  padding-top: 10px;
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.middle-title {
+  margin-top: 10px;
+}
+
+.middle-title a:hover {
+  background-color: rgb(198, 196, 196);
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.nav-left {
+  margin-left: 380px;
+  margin-top: 10px;
+}
+.nav-left button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}

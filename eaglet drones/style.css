@@ -1,0 +1,416 @@
+.fixed-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html {
+  transition: background-color 1s ease-in-out;
+  transition-delay: 0.5s;
+}
+/* this is the transition property for the whole page */
+
+html:hover {
+  background-color: #ffff;
+}
+
+/* navbar settings  */
+
+.navbar {
+  background-color: #051747;
+
+  height: 78px;
+  top: 0;
+  left: 20px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  width: 74rem;
+  margin-right: 29px;
+  border-bottom-left-radius: 10px;
+  justify-content: space-between;
+}
+
+/* left side of the navbar */
+.left > .logo-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  margin-left: 30px;
+  margin-top: 18px;
+  align-items: center;
+}
+/* right side of the navbar */
+
+.right > ul > li > a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 8%;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 90px;
+}
+
+.right > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+/* button specifications  */
+.signing {
+  padding: 10px;
+  margin-right: 40px;
+  border-radius: 10px;
+  width: 90px;
+  height: 50px;
+  margin-top: 4px;
+}
+
+.signing:hover {
+  background-color: black;
+  color: white;
+}
+/* first content representation */
+
+#slider {
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 5px;
+  position: relative;
+  height: 400px; /* Set the height of the slider */
+  width: 780px; /* Set the width of the slider */
+}
+
+#slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: cycle 25s linear infinite;
+}
+
+#slider li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#slider li.firstanimation {
+  animation-delay: 0s;
+}
+
+#slider li.secondanimation {
+  animation-delay: 8.33s; /* 25s / 3 images */
+}
+
+#slider li.thirdanimation {
+  animation-delay: 16.66s; /* 25s / 3 images */
+}
+
+@keyframes cycle {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.first-content {
+  display: flex;
+}
+
+.heading-content {
+  font-size: 40px;
+  padding: 20px;
+}
+/* button activity */
+
+.explore {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.explore:hover {
+  background-color: black;
+  color: white;
+}
+/* second content  */
+
+.second-content {
+  background-color: #b6e2f0;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  height: 300px;
+}
+
+.highlight {
+  top: 0px;
+  font-size: 40px;
+  padding: 55px;
+}
+
+.highlight h1 {
+  margin-top: -10px;
+}
+
+.highlight a {
+  text-decoration: none;
+  color: white;
+}
+.highlight a :hover {
+  text-decoration: wavy;
+}
+
+/* third content */
+
+.third-content {
+  display: flexbox;
+}
+
+.product-image {
+  margin-top: 20px;
+}
+
+.product-image img {
+  width: 560px;
+  height: 450px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* fourth content */
+
+.fourth-content {
+  background-color: #f4fcfc;
+  background-blend-mode: color-dodge;
+  height: 1300px;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.fourth-content > a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* .fourth-content a:hover {
+  color: rgb(172, 180, 180);
+} */
+
+.specify-cards img {
+  width: 22%;
+  height: 20%;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-left: 30px;
+}
+
+.specification {
+  display: flex;
+  flex-direction: row;
+  position: flxed;
+}
+
+.img-c1 {
+  height: 200px;
+  width: 300px;
+}
+.btn {
+  margin-top: 30px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: rgb(34, 34, 32);
+  color: white;
+}
+
+.con-des {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 50%;
+  width: 70%;
+  color: white;
+  font-size: medium;
+}
+.con-des-2 {
+  margin-left: 100px;
+  margin-right: -20px;
+  background-color: black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  width: 65%;
+  height: 50%;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  font-size: medium;
+}
+.con-des-3 {
+  margin-left: 120px;
+  background-color: black;
+  text-transform: capitalize;
+  border-radius: 10px;
+  width: 60%;
+  height: 50%;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  font-size: medium;
+}
+
+.card-image {
+  margin-left: 100px;
+}
+h3 {
+  margin-left: 30px;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.preview {
+  width: 48%;
+  background-color: #eafafa;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 90px;
+}
+
+.pre-image {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.preview-title {
+  margin: 10px 0;
+  background-color: none;
+}
+
+.preview-description {
+  margin: 0;
+}
+
+/* last-icons -lordicon */
+
+.options {
+  display: flex;
+}
+
+.options .icon {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.options .icon-2 {
+  margin-top: 60px;
+  margin-left: 250px;
+}
+
+.options .icon-3 {
+  margin-top: 79px;
+  margin-left: 290px;
+}
+
+/* heading -title  */
+.title {
+  display: flex;
+}
+
+.title-1 {
+  margin-left: 110px;
+}
+
+.title-2 {
+  margin-left: 340px;
+}
+
+.title-3 {
+  margin-left: 381px;
+}
+
+/* footer section  */
+footer {
+  background-color: #051747;
+  color: white;
+  padding: 1rem 0;
+  padding: 20px;
+  margin-bottom: 0px;
+  postion: fixed;
+}
+
+footer .main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 10px;
+}
+
+.main-content > .help,
+.links {
+  margin-top: 12px;
+}
+.main-content > .product,
+.site {
+  margin-top: 10px;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.main-content > .site-decrp {
+  font-size: medium;
+  text-align: left;
+  padding: 2px;
+}
+
+.site-decrp > p {
+  text-wrap: balance;
+  margin-left: 30px;
+}
+
+/* links fb.insta  */
+
+.links a i {
+  margin-right: 40px;
+  color: white;
+}
